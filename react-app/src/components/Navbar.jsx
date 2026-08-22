@@ -1,24 +1,32 @@
-function Navbar() {
+function Navbar({ onSignup, onLogin }) {
   return (
     <div className="header">
       <nav className="navbar">
-        
+
         <a className="navbar-brand" href="/">
           <img src="/images/logo.png" alt="PG Life" />
         </a>
 
         <div className="navbar-links">
-          <a href="#" className="nav-link">
+
+          <button
+            className="nav-link"
+            onClick={onSignup}
+          >
             <i className="fas fa-user"></i>
             Signup
-          </a>
+          </button>
 
           <div className="nav-vl"></div>
 
-          <a href="#" className="nav-link">
+          <button
+            className="nav-link"
+            onClick={onLogin}
+          >
             <i className="fas fa-sign-in-alt"></i>
             Login
-          </a>
+          </button>
+
         </div>
 
       </nav>

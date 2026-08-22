@@ -1,3 +1,4 @@
+import "./Home.css";
 import SearchBanner from "../components/SearchBanner";
 import CityCard from "../components/CityCard";
 
